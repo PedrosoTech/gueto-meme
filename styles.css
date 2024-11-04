@@ -1,0 +1,71 @@
+:root {
+    --corFundo: #121212;
+    --corTexto: #ffffff;
+    --corDestaque: #ff69b4;
+}
+
+body {
+    background-color: var(--corFundo);
+    color: var(--corTexto);
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.perfil {
+    text-align: center;
+}
+
+#imagemPrincipal {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--corDestaque);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+#imagemPrincipal:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+.badges {
+    margin: 1rem 0;
+}
+
+.badges img {
+    margin: 0 5px;
+}
+
+.titulo {
+    font-size: 3rem;
+    color: var(--corDestaque);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 1rem 0;
+}
+
+.contador {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#botaoRisada {
+    background-color: var(--corDestaque);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#botaoRisada:hover {
+    transform: scale(1.1);
+}
